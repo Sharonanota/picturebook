@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AF5858"
+    android:backgroundTint="#272424"
+    tools:context=".MainActivity5">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="362dp"
+        android:layout_height="395dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wee" />
+
+    <TextView
+        android:id="@+id/tvcommy"
+        android:layout_width="226dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="97dp"
+        android:background="#C1A1A1"
+        android:text="      Be Comfortable"
+        android:textAllCaps="true"
+        android:textColor="#151414"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/BtnPrevious"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <Button
+        android:id="@+id/BtnPrevious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="97dp"
+        android:text="Previous"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvcommy" />
+
+    <Button
+        android:id="@+id/BtnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginEnd="66dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="@+id/BtnPrevious"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/BtnPrevious"
+        app:layout_constraintTop_toTopOf="@+id/BtnPrevious" />
+</androidx.constraintlayout.widget.ConstraintLayout>
